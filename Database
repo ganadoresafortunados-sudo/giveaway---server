@@ -1,0 +1,285 @@
+{
+  "questions": [
+    {
+      "questionNumber": 1,
+      "question": "In the HTML file we built, which tag is used to create a button that triggers the application modal to open?",
+      "imageUrl": "",
+      "answerOptions": [
+        {
+          "text": "<link>",
+          "rationale": "The <link> tag is used to connect external resources like stylesheets, not for creating interactive buttons.",
+          "isCorrect": false
+        },
+        {
+          "text": "<div>",
+          "rationale": "A <div> is a generic container for content and doesn't have default button functionality, though it can be styled to look like one.",
+          "isCorrect": false
+        },
+        {
+          "text": "<button>",
+          "rationale": "The <button> tag is the semantically correct element for creating clickable buttons that trigger actions.",
+          "isCorrect": true
+        },
+        {
+          "text": "<script>",
+          "rationale": "The <script> tag is used to embed or reference executable JavaScript code, not to create visible, clickable elements.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Think about the most semantic HTML element for user actions."
+    },
+    {
+      "questionNumber": 2,
+      "question": "Which JavaScript method is used to find an HTML element by its unique ID, like `getElementById('appModal')`?",
+      "imageUrl": "",
+      "answerOptions": [
+        {
+          "text": "document.querySelector('.appModal')",
+          "rationale": "This method selects elements by their class name (using '.') or other CSS selectors, not by their unique ID.",
+          "isCorrect": false
+        },
+        {
+          "text": "document.getElementById('appModal')",
+          "rationale": "This is the correct and most efficient method for selecting a single element that has a unique ID.",
+          "isCorrect": true
+        },
+        {
+          "text": "document.getElementsByTagName('div')",
+          "rationale": "This method selects all elements of a certain tag type (like all <div>s), not a single, specific element by its ID.",
+          "isCorrect": false
+        },
+        {
+          "text": "document.findAll('#appModal')",
+          "rationale": "There is no standard `findAll` method in the Document Object Model (DOM).",
+          "isCorrect": false
+        }
+      ],
+      "hint": "The name of the method is very descriptive of what it does: it 'gets an element by...'."
+    },
+    {
+      "questionNumber": 3,
+      "question": "In our app's JavaScript, we use an `addEventListener` to listen for an event. What event is typically used to detect when a user clicks a button?",
+      "imageUrl": "",
+      "answerOptions": [
+        {
+          "text": "'submit'",
+          "rationale": "The 'submit' event is specifically for forms when they are submitted, not for general button clicks.",
+          "isCorrect": false
+        },
+        {
+          "text": "'mouseover'",
+          "rationale": "This event fires when the mouse pointer moves over an element, not when it is clicked.",
+          "isCorrect": false
+        },
+        {
+          "text": "'keydown'",
+          "rationale": "This event is related to keyboard input and fires when a key is pressed down.",
+          "isCorrect": false
+        },
+        {
+          "text": "'click'",
+          "rationale": "The 'click' event is the standard event that fires when a user presses and releases a mouse button on an element.",
+          "isCorrect": true
+        }
+      ],
+      "hint": "Consider the most common and direct user interaction with a button."
+    },
+    {
+      "questionNumber": 4,
+      "question": "To hide the modal, we used `appModal.classList.add('hidden')`. What does this line of code do?",
+      "imageUrl": "",
+      "answerOptions": [
+        {
+          "text": "It permanently deletes the modal from the page.",
+          "rationale": "This only adds a CSS class; it does not remove the element from the DOM. The element still exists but is not visible.",
+          "isCorrect": false
+        },
+        {
+          "text": "It adds a CSS class named 'hidden' to the modal element.",
+          "rationale": "The `classList.add()` method is the standard way to add a CSS class to an element, which can then be used to style it (e.g., set `display: none;`).",
+          "isCorrect": true
+        },
+        {
+          "text": "It creates a new HTML attribute called 'hidden' on the modal.",
+          "rationale": "While there is a `hidden` attribute in HTML, this code manipulates the `class` attribute, not the `hidden` attribute directly.",
+          "isCorrect": false
+        },
+        {
+          "text": "It changes the element's ID to 'hidden'.",
+          "rationale": "This code specifically targets the element's list of classes, not its unique ID.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Break down the method name: `classList` refers to the element's classes, and `add` is the action being performed."
+    },
+    {
+      "questionNumber": 5,
+      "question": "In Tailwind CSS, which class would you use to create a dark background, like the one on our landing page?",
+      "imageUrl": "",
+      "answerOptions": [
+        {
+          "text": "style=\"background-color: #0D1117;\"",
+          "rationale": "This is an example of inline CSS, not a Tailwind utility class. Tailwind aims to avoid writing inline styles.",
+          "isCorrect": false
+        },
+        {
+          "text": "bg-slate-900",
+          "rationale": "Tailwind's `bg-` prefix sets the background color. `slate-900` is one of the framework's predefined dark gray/blue colors, suitable for a dark theme.",
+          "isCorrect": true
+        },
+        {
+          "text": "color-dark",
+          "rationale": "This class name is not part of the standard Tailwind CSS framework. Tailwind uses a utility-first naming convention.",
+          "isCorrect": false
+        },
+        {
+          "text": "dark-mode:true",
+          "rationale": "This is not a valid CSS class. Tailwind handles dark mode with a `dark:` variant (e.g., `dark:bg-black`), not an attribute-like class.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Tailwind class names are typically composed of a property prefix, a value, and sometimes a shade number."
+    },
+    {
+      "questionNumber": 6,
+      "question": "We used a `setTimeout` function to simulate the 1-minute reversal of a withdrawal. What is the purpose of `setTimeout`?",
+      "imageUrl": "",
+      "answerOptions": [
+        {
+          "text": "To stop all other code from running for a specified time.",
+          "rationale": "`setTimeout` is non-blocking; it schedules a function to run later without pausing the execution of other code.",
+          "isCorrect": false
+        },
+        {
+          "text": "To execute a function repeatedly every few seconds.",
+          "rationale": "This describes `setInterval`, which runs a function at regular intervals. `setTimeout` runs a function only once.",
+          "isCorrect": false
+        },
+        {
+          "text": "To execute a function once after a specified delay.",
+          "rationale": "This is the exact purpose of `setTimeout`: it takes a function and a delay in milliseconds, then runs that function one time after the delay has passed.",
+          "isCorrect": true
+        },
+        {
+          "text": "To measure the time it takes for a function to run.",
+          "rationale": "While you can use timestamps to measure execution time, `setTimeout` itself is for scheduling, not for performance measurement.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "The name of the function describes its action: setting a 'time out' before something happens."
+    },
+    {
+      "questionNumber": 7,
+      "question": "In the HTML form for adding a card, which element creates a dropdown menu for selecting the card type (e.g., Razer Gold, Steam)?",
+      "imageUrl": "",
+      "answerOptions": [
+        {
+          "text": "<input type=\"dropdown\">",
+          "rationale": "HTML input elements do not have a `type` of 'dropdown'. This is not a valid input type.",
+          "isCorrect": false
+        },
+        {
+          "text": "<datalist>",
+          "rationale": "A `<datalist>` provides autocomplete suggestions for an `<input>` element but does not create a standalone dropdown menu.",
+          "isCorrect": false
+        },
+        {
+          "text": "<select> with <option> elements",
+          "rationale": "The `<select>` element is the standard HTML tag for creating a dropdown list, with each choice defined by a nested `<option>` element.",
+          "isCorrect": true
+        },
+        {
+          "text": "<ul> with <li> elements",
+          "rationale": "This creates an unordered list, which is a static list of items, not an interactive dropdown form control.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Think about how you 'select' one 'option' from a list."
+    },
+    {
+      "questionNumber": 8,
+      "question": "What is the purpose of the `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` tag in the `<head>` of our HTML?",
+      "imageUrl": "",
+      "answerOptions": [
+        {
+          "text": "It sets the title of the webpage that appears in the browser tab.",
+          "rationale": "The webpage title is set by the `<title>` tag, not a meta tag.",
+          "isCorrect": false
+        },
+        {
+          "text": "It improves the website's search engine ranking (SEO).",
+          "rationale": "While other meta tags can affect SEO, the viewport tag's primary role is related to display on different devices, not ranking.",
+          "isCorrect": false
+        },
+        {
+          "text": "It ensures the page renders correctly on mobile devices by setting the width and zoom level.",
+          "rationale": "This tag is essential for responsive web design. It tells the browser to set the page width to the device's screen width and to start with a non-zoomed view.",
+          "isCorrect": true
+        },
+        {
+          "text": "It links the external CSS stylesheet to the HTML document.",
+          "rationale": "Linking an external stylesheet is done using the `<link rel=\"stylesheet\" href=\"...\">` tag.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "This tag is crucial for making a website look good on a phone screen versus a desktop monitor."
+    },
+    {
+      "questionNumber": 9,
+      "question": "In the app, we have a `translations` object in JavaScript to hold all the text in Spanish. Why is this a good practice?",
+      "imageUrl": "",
+      "answerOptions": [
+        {
+          "text": "It makes the JavaScript file smaller.",
+          "rationale": "Storing text in an object actually increases the file size slightly; its benefit is not in size reduction.",
+          "isCorrect": false
+        },
+        {
+          "text": "It is the only way to put text on the screen.",
+          "rationale": "Text can be written directly in HTML. The purpose of this practice is organization and scalability, not a technical requirement.",
+          "isCorrect": false
+        },
+        {
+          "text": "It centralizes all text, making it easy to add more languages later.",
+          "rationale": "This practice, known as internationalization (i18n), is key. By keeping all text strings in one place, you can easily add another object for 'en', 'fr', etc., without changing the application logic.",
+          "isCorrect": true
+        },
+        {
+          "text": "It improves the application's performance.",
+          "rationale": "While clean code can indirectly help performance, the primary benefit of this approach is maintainability and scalability for multiple languages, not speed.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Consider what you would have to do if you needed to add Portuguese and French versions of the app."
+    },
+    {
+      "questionNumber": 10,
+      "question": "What is the purpose of `e.preventDefault()` at the beginning of our form submission handler functions?",
+      "imageUrl": "",
+      "answerOptions": [
+        {
+          "text": "It prevents the user from typing anything else in the form.",
+          "rationale": "This function does not affect the user's ability to interact with form fields; it only affects the submission event itself.",
+          "isCorrect": false
+        },
+        {
+          "text": "It stops the browser's default behavior of reloading the page when a form is submitted.",
+          "rationale": "By default, submitting a form causes a full page reload. `e.preventDefault()` stops this, allowing our JavaScript to handle the submission logic without losing the current page state.",
+          "isCorrect": true
+        },
+        {
+          "text": "It checks if the form's data is valid before proceeding.",
+          "rationale": "Validation must be done with separate JavaScript logic. `e.preventDefault()` does not perform any validation checks.",
+          "isCorrect": false
+        },
+        {
+          "text": "It clears all the input fields in the form after submission.",
+          "rationale": "Clearing the form fields requires separate code (e.g., `form.reset()`). `e.preventDefault()` only stops the default submission action.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Think about what normally happens to a webpage when you click the 'submit' button on a traditional HTML form."
+    }
+  ]
+}
+
